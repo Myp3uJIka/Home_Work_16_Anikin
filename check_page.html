@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Страница проверки POST</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<main>
+
+    <p>Если введённый id уже существует в базе, то будет установлен следующий свободный id.</p>
+    <p>Дата вводится в формате: MM/DD/YYYY</p>
+
+    <h1>Создание пользователя</h1>
+
+    <form action="http://127.0.0.1:5000/users" method="POST" enctype="multipart/form-data">
+        <table>
+            <tr>
+                <td>
+                    <label>id</label>
+                </td>
+                <td>
+                    <input type="text" name="id">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>first_name</label>
+                </td>
+                <td>
+                    <input type="text" name="first_name">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>last_name</label>
+                </td>
+                <td>
+                    <input type="text" name="last_name">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>age</label>
+                </td>
+                <td>
+                    <input type="text" name="age">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>email</label>
+                </td>
+                <td>
+                    <input type="text" name="email">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>role</label>
+                </td>
+                <td>
+                    <input type="text" name="role">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>id</label>
+                </td>
+                <td>
+                    <input type="text" name="id">
+                </td>
+            </tr>
+        </table>
+        <br>
+        <input type="submit" value="Отправить" class="button">
+    </form>
+
+    <h1>Создание заказа</h1>
+
+    <form action="http://127.0.0.1:5000/orders" method="POST" enctype="multipart/form-data">
+        <table>
+            <tr>
+                <td>
+                    <label>id</label>
+                </td>
+                <td>
+                    <input type="text" name="id">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>name</label>
+                </td>
+                <td>
+                    <input type="text" name="name">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>description</label>
+                </td>
+                <td>
+                    <input type="text" name="description">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>start_date</label>
+                </td>
+                <td>
+                    <input type="text" name="start_date">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>end_date</label>
+                </td>
+                <td>
+                    <input type="text" name="end_date">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>address</label>
+                </td>
+                <td>
+                    <input type="text" name="address">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>price</label>
+                </td>
+                <td>
+                    <input type="text" name="price">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>customer_id</label>
+                </td>
+                <td>
+                    <input type="text" name="customer_id">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>executor_id</label>
+                </td>
+                <td>
+                    <input type="text" name="executor_id">
+                </td>
+            </tr>
+        </table>
+        <br>
+        <input type="submit" value="Отправить" class="button">
+    </form>
+
+    <h1>Создание предложения</h1>
+
+    <form action="http://127.0.0.1:5000/offers" method="POST" enctype="multipart/form-data">
+        <table>
+            <tr>
+                <td>
+                    <label>id</label>
+                </td>
+                <td>
+                    <input type="text" name="id">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>order_id</label>
+                </td>
+                <td>
+                    <input type="text" name="order_id">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>executor_id</label>
+                </td>
+                <td>
+                    <input type="text" name="executor_id">
+                </td>
+            </tr>
+        </table>
+        <br>
+        <input type="submit" value="Отправить" class="button">
+    </form>
+</main>
+
+</body>
+</html>

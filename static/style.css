@@ -1,0 +1,66 @@
+/* Селекторы по тегам */
+
+body {
+    font-family: arial;
+    font-size: 18px;
+}
+
+main {
+    margin: 32px auto;
+    width: 320px;
+}
+
+hr {
+    margin: 32px 0;
+}
+
+fieldset {
+    border: none;
+}
+
+div {
+    padding-bottom: 8px;
+}
+
+select {
+    padding: 7px 6px;
+    background-color: #ddd;
+    border:none;
+    border-radius: 4px;
+    font-size: 18px;
+}
+
+textarea {
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+input {
+    margin-left: 16px;
+
+}
+input[type=file] {
+
+    margin-bottom: 16px;
+
+
+}
+
+a {
+    color: black;
+    font-size: 16px;
+}
+
+/* Селекторы по классам */
+
+.button {
+    background-color: #ddd;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: black;
+    border:none;
+    border-radius: 4px;
+    font-size: 18px;
+}
+
+
